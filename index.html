@@ -7,7 +7,7 @@
       name="description"
       content="翁碧妤的个人简历展示网站，聚焦 AI 视频审美评测、Prompt 工作流、视频内容策划、影视创作与新媒体运营。"
     />
-    <meta name="theme-color" content="#050505" />
+    <meta name="theme-color" content="#05070b" />
     <meta
       property="og:title"
       content="翁碧妤 | AI Video Aesthetic Evaluator & Content Creator"
@@ -26,404 +26,247 @@
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
+    <div class="film-grain" aria-hidden="true"></div>
+    <div class="archive-backdrop" aria-hidden="true">
+      <span class="pixel-field"></span>
+      <span class="pagoda-left"></span>
+      <span class="pagoda-right"></span>
+      <span class="film-strip"></span>
+      <span class="theater-seats"></span>
+      <span class="projector-flare"></span>
+      <span class="frame-corner corner-left"></span>
+      <span class="frame-corner corner-right"></span>
+    </div>
 
-    <header class="site-header" data-header>
-      <a class="brand" href="#home" aria-label="返回首页">
-        <span class="brand-mark">WBY</span>
-        <span class="brand-text">AI Video / Film & Media</span>
-      </a>
+    <nav class="archive-rail" aria-label="页面导航">
+      <a class="rail-mark" href="#home" aria-label="返回首页">翁<br />碧</a>
+      <p>
+        <span>AI 影像档案馆</span>
+        <em>Digital Film Archive</em>
+      </p>
+      <div class="rail-coords" aria-hidden="true">
+        24°59' N<br />
+        103°07' E<br />
+        <span>● REC</span>
+      </div>
+      <div class="rail-links">
+        <a href="#home"><span>01</span>Home</a>
+        <a href="#focus"><span>02</span>Focus</a>
+        <a href="#experience"><span>03</span>Experience</a>
+        <a href="#projects"><span>04</span>Projects</a>
+        <a href="#contact"><span>05</span>Contact</a>
+      </div>
+      <div class="rail-scan" aria-hidden="true">
+        <span>SCANNING...</span>
+        <i></i>
+      </div>
+    </nav>
 
-      <nav class="site-nav" aria-label="页面导航">
-        <a href="#focus">Focus</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <main id="main" class="site-stage">
+      <section class="archive-window hero-window" id="home" aria-labelledby="hero-title">
+        <div class="window-bar">
+          <div class="window-lights" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span>WB</span>
+          <strong>Digital Sketchbook</strong>
+          <em>AI File Archive_2026</em>
+        </div>
 
-    <main id="main">
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Portfolio / Resume 2026</p>
-          <h1 id="hero-title">
-            翁碧妤
-            <span>Weng Biyu</span>
-          </h1>
-          <p class="hero-subtitle" aria-label="AI Video Aesthetic Evaluator / Content Creator / Film & Media Researcher">
-            <span>AI Video Aesthetic Evaluator</span>
-            <span>Content Creator</span>
-            <span>Film & Media Researcher</span>
-          </p>
-          <p class="hero-lede">
-            关注 AI 视频生成的审美评测、Prompt 工作流、影视叙事与内容传播。
-          </p>
+        <div class="window-body">
+          <div class="hero-copy">
+            <p class="eyebrow">Portfolio / 2026</p>
+            <h1 id="hero-title" class="glitch-title" data-text="翁碧妤">翁碧妤</h1>
+            <p class="roman-name">Weng Biyu</p>
+            <span class="title-rule"></span>
+            <p class="hero-role">AI Video Aesthetic Evaluator</p>
+            <div class="hero-actions">
+              <a class="action-link" href="#experience">View Experience</a>
+              <a class="action-link" href="./assets/wengbiyu-resume.docx" download>Download Resume</a>
+            </div>
+          </div>
 
-          <div class="hero-actions" aria-label="主要操作">
-            <a class="button button-dark" href="#experience">查看经历</a>
-            <a class="button button-light" href="./assets/wengbiyu-resume.docx" download>
-              下载简历
+          <figure class="identity-card" aria-label="AI 影像档案视觉">
+            <div class="portrait-grid" aria-hidden="true"></div>
+            <div class="binary-portrait" aria-hidden="true">
+              <span>01001</span>
+              <span>11010</span>
+              <span>00101</span>
+              <span>10110</span>
+              <span>01001</span>
+              <span>11010</span>
+              <span>00101</span>
+              <span>10110</span>
+            </div>
+            <figcaption>
+              <span>Archive<br />No.2026</span>
+              <em>Data x Aesthetics x Narrative</em>
+            </figcaption>
+          </figure>
+
+          <div class="wave-divider" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="works-preview" aria-label="作品与能力预览">
+            <p>Works Preview</p>
+            <a class="work-card work-prompt" href="#focus">
+              <div class="work-visual">
+                <span>INPUT</span>
+                <span>PROMPT</span>
+                <span>MODEL</span>
+                <span>OUTPUT</span>
+              </div>
+              <strong>Prompt Workflow</strong>
+            </a>
+            <a class="work-card work-eye" href="#experience">
+              <div class="work-visual">
+                <span>98%</span>
+              </div>
+              <strong>Aesthetic QA</strong>
+            </a>
+            <a class="work-card work-moon" href="#experience">
+              <div class="work-visual">
+                <span>Scene 07</span>
+              </div>
+              <strong>Video Direction</strong>
+            </a>
+            <a class="work-card work-red" href="#projects">
+              <div class="work-visual">
+                <span>2000.04.14</span>
+              </div>
+              <strong>Film Archive</strong>
+            </a>
+            <a class="work-card work-wire" href="#projects">
+              <div class="work-visual">
+                <span>AH.736</span>
+              </div>
+              <strong>Selected Works</strong>
             </a>
           </div>
         </div>
+      </section>
 
-        <figure class="hero-art" aria-label="黑白影像评测视觉">
-          <img
-            src="./assets/editorial-contact-sheet.png"
-            alt="黑白接触印样风格视觉图，包含 WBY 字样和审美评测框"
-          />
-          <figcaption>
-            Aesthetic index, prompt workflow, visual judgment, direction.
-          </figcaption>
-        </figure>
-
-        <div class="hero-index" aria-label="核心标签">
-          <span>AIGC Evaluation</span>
-          <span>Prompt Workflow</span>
-          <span>Video Direction</span>
-          <span>Film Literacy</span>
+      <section class="archive-section" id="focus" aria-labelledby="focus-title">
+        <div class="section-tag">02 / Focus</div>
+        <h2 id="focus-title">Professional Lens</h2>
+        <div class="focus-grid">
+          <article class="data-tile reveal">
+            <span>01</span>
+            <h3>AI 视频审美评测</h3>
+            <p>人物、场景、构图、光影、风格一致性等维度的视觉判断。</p>
+          </article>
+          <article class="data-tile reveal">
+            <span>02</span>
+            <h3>Prompt 与测试 Agent</h3>
+            <p>t2va / i2va 场景化与风格化专项测试流搭建。</p>
+          </article>
+          <article class="data-tile reveal">
+            <span>03</span>
+            <h3>视频策划与制作</h3>
+            <p>分镜、勘景、拍摄、剪辑、封面与短视频导演。</p>
+          </article>
+          <article class="data-tile reveal">
+            <span>04</span>
+            <h3>影视与传播理解</h3>
+            <p>广播电视、新媒体、电影节运营、剧本创作与影像审美。</p>
+          </article>
         </div>
       </section>
 
-      <section class="section focus-section" id="focus" aria-labelledby="focus-title">
-        <div class="section-kicker">01 / Professional Lens</div>
-        <div class="section-grid">
-          <div class="section-heading">
-            <h2 id="focus-title">AI 视频审美评测与影视内容创作的交叉视角</h2>
-            <p>
-              从测试 Agent、Prompt 模板、风格一致性评测，到短视频导演、电影节物料与内容运营，
-              个人经历围绕“影像如何被生成、判断、包装和传播”展开。
-            </p>
-          </div>
-
-          <div class="focus-list">
-            <article class="focus-item reveal">
-              <span>01</span>
-              <h3>AI 视频审美评测</h3>
-              <p>
-                覆盖人物、场景、构图、光影、风格一致性等维度，参与可灵基础模型升级迭代相关评测工作。
-              </p>
-            </article>
-            <article class="focus-item reveal">
-              <span>02</span>
-              <h3>Prompt 与测试 Agent</h3>
-              <p>
-                梳理测试任务流与 Prompt 模板，搭建 t2va 场景化、t2va 风格化、i2va 风格化专项测试 Agent。
-              </p>
-            </article>
-            <article class="focus-item reveal">
-              <span>03</span>
-              <h3>视频策划与制作</h3>
-              <p>
-                具备分镜、勘景、拍摄、剪辑、封面设计和短视频导演经验，能从脚本推进到成片发布。
-              </p>
-            </article>
-            <article class="focus-item reveal">
-              <span>04</span>
-              <h3>影视与传播理解</h3>
-              <p>
-                广播电视与新媒体背景，电影阅片量超 1000 部，具备影视审美、剧作与内容传播判断。
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section metrics-strip" aria-label="关键成果数字">
-        <div class="metric reveal">
-          <strong>50+</strong>
-          <span>丁香医生系列视频制作</span>
-        </div>
-        <div class="metric reveal">
-          <strong>40+</strong>
-          <span>抖音千赞视频</span>
-        </div>
-        <div class="metric reveal">
-          <strong>4</strong>
-          <span>城市客户拍摄经历</span>
-        </div>
-        <div class="metric reveal">
-          <strong>3000+</strong>
-          <span>50 天 IP 粉丝增长</span>
-        </div>
-      </section>
-
-      <section class="section" id="experience" aria-labelledby="experience-title">
-        <div class="section-kicker">02 / Experience</div>
-        <div class="experience-head">
-          <h2 id="experience-title">经历索引</h2>
-          <p>
-            按最近经历排序，重点呈现 AIGC 评测、产品运营、视频制作与传播成果。
-          </p>
-        </div>
-
+      <section class="archive-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-tag">03 / Experience Index</div>
+        <h2 id="experience-title">Experience</h2>
         <div class="experience-list">
           <details class="experience-item reveal" open>
             <summary>
-              <span class="time">2026.03 - 至今</span>
-              <span class="role-group">
-                <strong>快手科技｜可灵 AI 事业部-美学评测中心</strong>
-                <em>QA 美学评测实习生</em>
-              </span>
-              <span class="expand-label">重点</span>
+              <span>2026.03 - 至今</span>
+              <strong>快手科技｜可灵 AI 事业部-美学评测中心</strong>
+              <em>QA 美学评测实习生</em>
             </summary>
-            <div class="experience-body">
-              <p>
-                搭建专项测试 Agent，梳理测试任务流与 Prompt 模板，覆盖人物、场景、构图、光影、
-                风格一致性等核心维度，为可灵基础模型升级迭代提供测试集构建支持。
-              </p>
-              <ul>
-                <li>基于快手内部平台万擎，搭建 t2va 场景化、t2va 风格化、i2va 风格化专项测试 Agent。</li>
-                <li>通过自动化生成、结果收集与问题归因，提高专项测试效率与评测覆盖度。</li>
-              </ul>
-              <div class="tags">
-                <span>Aesthetic QA</span>
-                <span>Prompt Template</span>
-                <span>t2va / i2va</span>
-              </div>
-            </div>
-          </details>
-
-          <details class="experience-item reveal">
-            <summary>
-              <span class="time">2025.12 - 2026.02</span>
-              <span class="role-group">
-                <strong>北京寻酷科技 SeeKoo｜产品部</strong>
-                <em>海外产品运营实习生</em>
-              </span>
-              <span class="expand-label">AI 产品</span>
-            </summary>
-            <div class="experience-body">
-              <p>
-                调研海外竞品社媒宣传风格，参与 Dzine AI 新功能与模型上新宣传片、宣传物料制作。
-              </p>
-              <ul>
-                <li>参与 Ani Studio 功能内测，辅助产品使用反馈与内容验证。</li>
-                <li>作为小组负责人，搭建并优化产品内 Prompt 文字模板与 AI 动画样片生产流程。</li>
-              </ul>
-              <div class="tags">
-                <span>Overseas Social</span>
-                <span>Prompt Library</span>
-                <span>AI Animation</span>
-              </div>
-            </div>
-          </details>
-
-          <details class="experience-item reveal">
-            <summary>
-              <span class="time">2025.09 - 2025.12</span>
-              <span class="role-group">
-                <strong>美团｜SaaS 餐饮事业部｜品牌和营销组</strong>
-                <em>视频实习生</em>
-              </span>
-              <span class="expand-label">4 城拍摄</span>
-            </summary>
-            <div class="experience-body">
-              <p>
-                根据文案脚本与实拍可行性搭建分镜头脚本，前往客户所在地勘景拍摄，并独立完成视频包装剪辑。
-              </p>
-              <ul>
-                <li>参与潍坊、武汉、长沙、天津四地客户拍摄工作。</li>
-                <li>根据视频主题和调性制作封面图，保证视频包装与品牌表达一致。</li>
-              </ul>
-              <div class="tags">
-                <span>Storyboard</span>
-                <span>On-site Shooting</span>
-                <span>Video Packaging</span>
-              </div>
-            </div>
-          </details>
-
-          <details class="experience-item reveal">
-            <summary>
-              <span class="time">2025.06 - 2025.07</span>
-              <span class="role-group">
-                <strong>戏剧综艺《江南·十二场欢聚》</strong>
-                <em>短视频导演</em>
-              </span>
-              <span class="expand-label">每日 4 条</span>
-            </summary>
-            <div class="experience-body">
-              <p>
-                结合吴江文化和剧综内容，每日独立策划选题、拍摄素材并当天产出 4 个视频，
-                为长综艺上播前制造热度和话题。
-              </p>
-              <div class="tags">
-                <span>Short Video Direction</span>
-                <span>Topic Planning</span>
-                <span>Culture Content</span>
-              </div>
-            </div>
-          </details>
-
-          <details class="experience-item reveal">
-            <summary>
-              <span class="time">2024.05 - 2024.07</span>
-              <span class="role-group">
-                <strong>博源文化传播有限公司</strong>
-                <em>视频编导</em>
-              </span>
-              <span class="expand-label">3000+ 增长</span>
-            </summary>
-            <div class="experience-body">
-              <p>
-                挖掘肇庆周边三农题材，负责从策划到视频制作的完整内容链路，输出多个农产品题材短视频。
-              </p>
-              <ul>
-                <li>打造“亲切和蔼的新农人朋友”个人 IP，50 天抖音粉丝从个位数增长到 3000+。</li>
-                <li>建立“亮点开头-产品呈现-爆点制造与情绪反差-结尾互动”视频结构。</li>
-              </ul>
-              <div class="tags">
-                <span>IP Incubation</span>
-                <span>Rural Content</span>
-                <span>Short Video Growth</span>
-              </div>
-            </div>
-          </details>
-
-          <details class="experience-item reveal">
-            <summary>
-              <span class="time">2023.03 - 2023.06</span>
-              <span class="role-group">
-                <strong>丁香医生｜大众医学部｜新媒体中心</strong>
-                <em>新媒体实习生</em>
-              </span>
-              <span class="expand-label">50+ 视频</span>
-            </summary>
-            <div class="experience-body">
-              <p>
-                参与开拓“丁香同事日常”系列视频，制作 50+ 个视频，推动专业医学内容以更具网感的形式传播。
-              </p>
-              <ul>
-                <li>产出抖音千赞视频 40+，小红书千赞视频 20+。</li>
-                <li>将视频选题转化为小红书/公众号图文内容，优化排版设计和内容表达。</li>
-                <li>参与数据统计与分析，迭代视频节奏和风格，提升触达效率。</li>
-              </ul>
-              <div class="tags">
-                <span>Medical Media</span>
-                <span>Content Analysis</span>
-                <span>Social Video</span>
-              </div>
-            </div>
-          </details>
-        </div>
-      </section>
-
-      <section class="section project-section" id="projects" aria-labelledby="projects-title">
-        <div class="section-kicker">03 / Projects</div>
-        <div class="section-grid">
-          <div class="section-heading">
-            <h2 id="projects-title">影视与内容项目</h2>
             <p>
-              电影节、青年创作训练营与校园媒体项目构成了审美判断和内容执行的底层训练。
+              搭建专项测试 Agent，梳理测试任务流与 Prompt 模板，覆盖人物、场景、构图、光影、风格一致性等核心维度。
             </p>
-          </div>
-
-          <div class="project-stack">
-            <article class="project-item reveal">
-              <span>2025.02 - 2025.05</span>
-              <h3>第 32 届北京大学生电影节</h3>
-              <p>
-                原创部成员。联系高校和展映分会场，评审“原创影片”单元投稿作品，
-                设计原创影片展映会场物料，并撰写原创展映活动回顾推文。
-              </p>
-            </article>
-            <article class="project-item reveal">
-              <span>2025.10.31 - 2025.11.02</span>
-              <h3>第 3 届粤港澳大湾区电影周青年创作训练营</h3>
-              <p>
-                通过高校邀请选拔进入青创营，参与 4 天创作训练课程，
-                与导演、编剧及电影行业从业者进行创作交流。
-              </p>
-            </article>
-            <article class="project-item reveal">
-              <span>2021.09 - 2022.06</span>
-              <h3>汕头草根播报</h3>
-              <p>
-                视频部成员。策划与拍摄微电影《绩点为王》，独立策划访谈节目《从前慢》，
-                发布于校内媒体公众号。
-              </p>
-            </article>
-          </div>
+          </details>
+          <details class="experience-item reveal">
+            <summary>
+              <span>2025.12 - 2026.02</span>
+              <strong>北京寻酷科技 SeeKoo｜产品部</strong>
+              <em>海外产品运营实习生</em>
+            </summary>
+            <p>调研海外社媒宣传风格，制作 Dzine AI 宣传物料，参与 Ani Studio 功能内测与 Prompt 模板优化。</p>
+          </details>
+          <details class="experience-item reveal">
+            <summary>
+              <span>2025.09 - 2025.12</span>
+              <strong>美团｜SaaS 餐饮事业部｜品牌和营销组</strong>
+              <em>视频实习生</em>
+            </summary>
+            <p>搭建分镜头脚本，参与潍坊、武汉、长沙、天津四地客户拍摄，独立完成视频包装剪辑。</p>
+          </details>
+          <details class="experience-item reveal">
+            <summary>
+              <span>2025.06 - 2025.07</span>
+              <strong>戏剧综艺《江南·十二场欢聚》</strong>
+              <em>短视频导演</em>
+            </summary>
+            <p>结合吴江文化和剧综内容，每日独立策划选题、拍摄素材并当天产出 4 个视频。</p>
+          </details>
+          <details class="experience-item reveal">
+            <summary>
+              <span>2024.05 - 2024.07</span>
+              <strong>博源文化传播有限公司</strong>
+              <em>视频编导</em>
+            </summary>
+            <p>打造新农人个人 IP，50 天抖音粉丝从个位数增长到 3000+。</p>
+          </details>
+          <details class="experience-item reveal">
+            <summary>
+              <span>2023.03 - 2023.06</span>
+              <strong>丁香医生｜大众医学部｜新媒体中心</strong>
+              <em>新媒体实习生</em>
+            </summary>
+            <p>参与“丁香同事日常”系列视频，制作 50+ 个视频，抖音千赞视频 40+，小红书千赞视频 20+。</p>
+          </details>
         </div>
       </section>
 
-      <section class="section education-skills" aria-label="教育背景与技能">
-        <div class="education-block reveal" id="education">
-          <div class="section-kicker">04 / Education</div>
-          <h2>教育背景</h2>
-          <ol class="timeline-list">
-            <li>
-              <span>2024.09 - 2027.06</span>
-              <strong>北京师范大学</strong>
-              <p>戏剧与影视-广播电视与新媒体，全日制研究生</p>
-              <em>传播学理论 / 影视史论 / 剧本创作 / 电影节运营和管理</em>
-            </li>
-            <li>
-              <span>2019.09 - 2023.06</span>
-              <strong>汕头大学</strong>
-              <p>广播电视学，全日制本科</p>
-              <em>媒体技术基础 / 网络视觉设计 / 摄影基础 / 信息图表设计</em>
-            </li>
-          </ol>
-        </div>
-
-        <div class="skills-block reveal" id="skills">
-          <div class="section-kicker">05 / Skills</div>
-          <h2>技能索引</h2>
-          <div class="skill-groups">
-            <div>
-              <span>AI & Prompt</span>
-              <p>ChatGPT、豆包、AI Agent、Prompt 优化、Nano Banana</p>
-            </div>
-            <div>
-              <span>Visual & Video</span>
-              <p>Photoshop、Premiere Pro、Adobe Illustrator、剪映、可画、秀米</p>
-            </div>
-            <div>
-              <span>Writing & Directing</span>
-              <p>剧本写作、分镜、导演、视频包装</p>
-            </div>
-            <div>
-              <span>Language & Film</span>
-              <p>CET6，英语阅读与写作；1000+ 电影阅片量与影视解析能力</p>
-            </div>
-          </div>
+      <section class="archive-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-tag">04 / Selected Works</div>
+        <h2 id="projects-title">Projects</h2>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <span>2025.02 - 2025.05</span>
+            <h3>第 32 届北京大学生电影节</h3>
+            <p>原创部成员。展映分会场开拓、投稿作品评审、展映物料设计与活动回顾推文撰写。</p>
+          </article>
+          <article class="project-card reveal">
+            <span>2025.10.31 - 2025.11.02</span>
+            <h3>粤港澳大湾区电影周青年创作训练营</h3>
+            <p>参与 4 天创作训练课程，与导演、编剧及电影行业从业者进行创作交流。</p>
+          </article>
+          <article class="project-card reveal">
+            <span>2021.09 - 2022.06</span>
+            <h3>汕头草根播报</h3>
+            <p>策划与拍摄微电影《绩点为王》，独立策划访谈节目《从前慢》。</p>
+          </article>
         </div>
       </section>
 
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-copy">
-          <div class="section-kicker">06 / Contact</div>
-          <h2 id="contact-title">Let's talk about AI video, narrative and visual judgment.</h2>
-          <p>
-            OC 一周到岗，周出勤 5 天，实习 4 个月以上。
-          </p>
+      <section class="archive-section contact-panel" id="contact" aria-labelledby="contact-title">
+        <div class="section-tag">05 / Contact</div>
+        <h2 id="contact-title">Contact</h2>
+        <div class="contact-grid">
+          <a href="mailto:1336798169@qq.com"><span>Email</span>1336798169@qq.com</a>
+          <button type="button" data-copy="Edith_fish"><span>WeChat</span>Edith_fish</button>
+          <a href="tel:15207580079"><span>Phone</span>15207580079</a>
+          <a href="./assets/wengbiyu-resume.docx" download><span>Resume</span>Download</a>
         </div>
-
-        <div class="contact-actions">
-          <a class="contact-line" href="mailto:1336798169@qq.com">
-            <span>Email</span>
-            <strong>1336798169@qq.com</strong>
-          </a>
-          <button class="contact-line" type="button" data-copy="Edith_fish" aria-label="复制微信号 Edith_fish">
-            <span>WeChat</span>
-            <strong>Edith_fish</strong>
-          </button>
-          <a class="contact-line" href="tel:15207580079">
-            <span>Phone</span>
-            <strong>15207580079</strong>
-          </a>
-          <a class="button button-dark wide" href="./assets/wengbiyu-resume.docx" download>
-            Download Resume
-          </a>
-          <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
-        </div>
+        <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <span>Weng Biyu / Portfolio Resume</span>
-      <a href="#home">Back to top</a>
-    </footer>
   </body>
 </html>

@@ -1,36 +1,6 @@
-const header = document.querySelector("[data-header]");
-const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
+const navLinks = Array.from(document.querySelectorAll(".rail-links a"));
 const copyButton = document.querySelector("[data-copy]");
 const copyStatus = document.querySelector("[data-copy-status]");
-
-const updateHeader = () => {
-  if (!header) return;
-  header.classList.toggle("is-scrolled", window.scrollY > 12);
-};
-
-updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });
-
-const revealItems = document.querySelectorAll(".reveal");
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-if (prefersReducedMotion.matches) {
-  revealItems.forEach((item) => item.classList.add("is-visible"));
-} else {
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.16 }
-  );
-
-  revealItems.forEach((item) => revealObserver.observe(item));
-}
 
 const sectionObserver = new IntersectionObserver(
   (entries) => {
@@ -42,7 +12,7 @@ const sectionObserver = new IntersectionObserver(
       });
     });
   },
-  { rootMargin: "-35% 0px -55% 0px", threshold: 0 }
+  { rootMargin: "-36% 0px -56% 0px", threshold: 0 }
 );
 
 document.querySelectorAll("section[id]").forEach((section) => {
