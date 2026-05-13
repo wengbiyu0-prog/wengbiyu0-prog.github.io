@@ -39,3 +39,30 @@ if (copyButton) {
     }
   });
 }
+
+const album = document.querySelector("[data-album]");
+
+if (album) {
+  const image = album.querySelector("[data-album-image]");
+  const counter = album.querySelector("[data-album-count]");
+  const thumbs = Array.from(album.querySelectorAll("[data-album-thumb]"));
+  const prev = album.querySelector("[data-album-prev]");
+  const next = album.querySelector("[data-album-next]");
+  let index = 0;
+
+  const showAlbumImage = (nextIndex) => {
+    index = (nextIndex + thumbs.length) % thumbs.length;
+    image.src = thumbs[index].dataset.src;
+    counter.textContent = `${String(index + 1).padStart(2, "0")} / ${String(thumbs.length).padStart(2, "0")}`;
+    thumbs.forEach((thumb, thumbIndex) => {
+      thumb.classList.toggle("is-active", thumbIndex === index);
+    });
+  };
+
+  thumbs.forEach((thumb, thumbIndex) => {
+    thumb.addEventListener("click", () => showAlbumImage(thumbIndex));
+  });
+
+  prev.addEventListener("click", () => showAlbumImage(index - 1));
+  next.addEventListener("click", () => showAlbumImage(index + 1));
+}
