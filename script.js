@@ -1,4 +1,4 @@
-const navLinks = Array.from(document.querySelectorAll(".rail-links a"));
+const navLinks = Array.from(document.querySelectorAll(".site-nav a[href^='#']"));
 const copyButton = document.querySelector("[data-copy]");
 const copyStatus = document.querySelector("[data-copy-status]");
 
@@ -17,6 +17,21 @@ const sectionObserver = new IntersectionObserver(
 
 document.querySelectorAll("section[id]").forEach((section) => {
   sectionObserver.observe(section);
+});
+
+const workFilters = Array.from(document.querySelectorAll("[data-work-filter]"));
+const workCards = Array.from(document.querySelectorAll("[data-work-card]"));
+
+workFilters.forEach((filter) => {
+  filter.addEventListener("click", () => {
+    const category = filter.dataset.workFilter;
+    workFilters.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button === filter));
+    });
+    workCards.forEach((card) => {
+      card.hidden = category !== "all" && card.dataset.category !== category;
+    });
+  });
 });
 
 const showCopyStatus = (message) => {
