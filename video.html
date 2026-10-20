@@ -3,41 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#020305" />
-    <title>影像长廊 | 翁碧妤</title>
-    <link rel="stylesheet" href="./styles.css?v=20261018-infocus-full" />
-    <script src="./script.js?v=20261018-infocus-full" defer></script>
+    <meta name="theme-color" content="#090908" />
+    <title>纪实 / 访谈 / 电影短片 | 翁碧妤</title>
+    <link rel="stylesheet" href="./styles.css?v=20261021-lowpoly" />
+    <script src="./media-library.js?v=20261021-lowpoly" defer></script>
+    <script src="./script.js?v=20261021-lowpoly" defer></script>
   </head>
-  <body class="subpage video-page">
-    <a class="skip-link" href="#video-room">跳到影像空间</a>
-    <div class="film-grain" aria-hidden="true"></div>
-    <header class="subpage-topbar video-topbar">
-      <a href="./index.html#focus">← Back</a>
-      <span>Cinema Scope / 2026</span>
-      <strong>影像长廊</strong>
+  <body class="subpage director-room-page">
+    <a class="skip-link" href="#director-room">跳到导演工作室</a>
+    <header class="subpage-topbar room-topbar">
+      <a href="./index.html#projects">← SELECTED WORK</a>
+      <span>DIRECTOR'S ROOM / 02</span>
+      <strong>影像作品</strong>
     </header>
 
-    <main id="video-room" class="cinema-room" data-video-room>
-      <section class="vision-stage" aria-label="电影视镜空间">
-        <button class="vision-side vision-left" type="button" data-video-prev aria-label="上一个视频">
-          <video data-video-left muted loop playsinline autoplay preload="metadata" src="./mov/video-03.mp4"></video>
-          <span>Left</span>
-        </button>
-
-        <figure class="vision-center">
-          <video data-video-main controls playsinline preload="metadata" src="./mov/video-01.mp4"></video>
-          <figcaption>
-            <span data-video-count>01 / 03</span>
-            <strong data-video-title>Screening 01</strong>
-            <em>Video glows as the only lamp in the room.</em>
-          </figcaption>
-        </figure>
-
-        <button class="vision-side vision-right" type="button" data-video-next aria-label="下一个视频">
-          <video data-video-right muted loop playsinline autoplay preload="metadata" src="./mov/video-02.mp4"></video>
-          <span>Right</span>
-        </button>
-      </section>
+    <main id="director-room" class="workroom-scene director-room" data-media-room="documentary">
+      <div class="studio-heading">
+        <h1>放映之前</h1>
+        <p>选择一盘录像带，进入对应的影像档案。</p>
+      </div>
+      <div class="projector-set" aria-hidden="true">
+        <div class="projector-lens"></div><div class="projector-reel projector-reel-one"></div><div class="projector-reel projector-reel-two"></div>
+        <div class="projector-beam"></div><div class="projection-screen"><span>WBY<br />FILM ARCHIVE</span></div>
+      </div>
+      <div class="studio-furniture">
+        <div class="director-sofa" aria-hidden="true"><i></i><i></i><span></span></div>
+        <section class="tape-console" aria-label="录像带分类">
+          <div class="console-label"><span>SELECT A REEL</span><span>01—03</span></div>
+          <div class="tape-row">
+            <button class="vhs-tape" id="documentary" type="button" data-play-category="documentary">
+              <span class="tape-label">01 / NON-FICTION</span><i class="tape-window"><b></b><b></b></i><strong>纪实</strong>
+            </button>
+            <button class="vhs-tape" id="interview" type="button" data-play-category="interview">
+              <span class="tape-label">02 / CONVERSATION</span><i class="tape-window"><b></b><b></b></i><strong>访谈</strong>
+            </button>
+            <button class="vhs-tape" id="short-film" type="button" data-play-category="shortFilm">
+              <span class="tape-label">03 / SHORT FILM</span><i class="tape-window"><b></b><b></b></i><strong>电影短片</strong>
+            </button>
+          </div>
+        </section>
+      </div>
+      <dialog class="media-dialog projection-dialog" data-media-dialog aria-labelledby="media-dialog-title">
+        <div class="dialog-topline"><span data-media-dialog-kicker>FILM ARCHIVE / REEL</span><button type="button" data-media-close aria-label="关闭放映">×</button></div>
+        <div class="dialog-work-title"><h1 id="media-dialog-title" data-media-dialog-title></h1><span data-media-count>00 / 00</span></div>
+        <video class="dialog-video" data-media-player controls playsinline preload="metadata" hidden></video>
+        <div class="media-external" data-media-external hidden>
+          <img data-media-poster alt="作品首帧" />
+          <div><span>外部作品</span><a data-media-link target="_blank" rel="noopener noreferrer">打开夸克网盘</a><p>提取码 <strong data-media-code></strong></p></div>
+        </div>
+        <div class="media-empty" data-media-empty hidden><span>EMPTY REEL</span><strong>影片待上传</strong><p>该类别的 MP4 / MOV 文件加入后，会在这里放映。</p></div>
+        <div class="dialog-controls"><button type="button" data-media-prev aria-label="上一个片段">←</button><span>切换作品</span><button type="button" data-media-next aria-label="下一个片段">→</button></div>
+      </dialog>
     </main>
   </body>
 </html>
