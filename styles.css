@@ -2281,6 +2281,9 @@ body::after { opacity: .035; }
 .data-tile span { color: rgba(244,244,241,.4); font-family: var(--mono); font-size: 9px; letter-spacing: .1em; }
 .data-tile h3 { margin: 19px 0 10px; color: var(--paper); font-size: 18px; font-weight: 600; }
 .data-tile p { margin: 0; color: rgba(244,244,241,.52); font-size: 12px; line-height: 1.8; }
+.data-tile ul { display: grid; gap: 5px; margin: 0; padding: 0; color: rgba(244,244,241,.58); font-size: 12px; line-height: 1.65; list-style: none; }
+.data-tile li { position: relative; padding-left: 12px; }
+.data-tile li::before { position: absolute; top: .65em; left: 0; width: 4px; height: 4px; background: var(--blue-bright); content: ""; }
 .experience-list { border-top: 1px solid var(--line-soft); }
 .experience-item { padding: 0; border: 0; border-bottom: 1px solid var(--line-soft); background: transparent; }
 .experience-item summary { display: grid; grid-template-columns: 140px minmax(0,1fr) minmax(180px,.45fr); gap: 20px; align-items: center; min-height: 82px; cursor: pointer; list-style: none; }
